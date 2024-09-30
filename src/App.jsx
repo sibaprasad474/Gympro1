@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Equipments from "./components/Equipments/Equipments";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <div>
         <Navbar />
         <Hero />
+        <Equipments/>
       </div>
+       
     </div>
   );
 }

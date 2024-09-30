@@ -14,7 +14,7 @@ function Navbar() {
       <nav>
         <div className="conatiner flex justify-between items-center py-2 px-4">
           {/* logo section  */}
-          <div className="flex items-center gap-2 text-2xl py-6 px-6">
+          <div className="flex items-center gap-2 text-3xl py-6 px-6 font-[700] uppercase ">
             <FaDumbbell />
             <p>Gym</p>
             <p className="text-secondary">pro</p>
@@ -28,7 +28,7 @@ function Navbar() {
                   <li key={item.key}>
                     <a
                       href={item.link}
-                      className="inline-block hover:text-primary font-semibold"
+                      className="inline-block hover:text-primary font-semibold text-xl text-gray-600"
                     >
                       {item.title}
                     </a>
@@ -40,13 +40,13 @@ function Navbar() {
 
           {/* icons section  */}
           <div className="py-2 px-4 flex justify-between items-center gap-2">
-            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
+            <button className="text-3xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <CiSearch />
             </button>
-            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
+            <button className="text-3xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <PiShoppingCartThin />
             </button>
-            <button className="p-2 hover:bg-primary hover:text-white duration-200 text-primary font-semibold rounded-md border-2 border-primary hidden md:block">
+            <button className="p-3 hover:bg-primary hover:text-white duration-200 text-primary font-semibold rounded-md border-2 border-primary hidden md:block">
               Login
             </button>
             {/* Mobile Hamburger menu */}
