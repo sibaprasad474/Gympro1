@@ -14,7 +14,7 @@ function Hero() {
           {/* Ensure full width and height */}
           <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
             {/* Brand info with animation */}
-            <motion.div className="flex flex-col py-16 px-16 md:py-[15vh] md:px-10 font-playfair justify-center md:bg-[#eff1f1] md:rounded-[10%]">
+            <motion.div className="flex flex-col py-16 px-16 md:py-[15vh] md:px-10 font-playfair justify-center md:rounded-[10%]">
               <motion.h1
                 initial={{ x: -150 }}
                 animate={{ x: 0 }}
@@ -48,9 +48,9 @@ function Hero() {
             {/* Hero image with rotation animation */}
             <motion.div
               className="flex justify-center items-center py-16 px-16 md:py-[15vh] md:px-10"
-              initial={{ rotate: 90 }} // Initial rotation of +45 degrees
-              animate={{ rotate: 0 }} // Animate to 0 degrees (initial position)
-              transition={{ duration: 3 }} // Set animation duration
+              initial={{ rotate: 90 ,y: 150}}
+              animate={{ rotate: 0 ,y: 0}} 
+              transition={{ duration: 1.5 }}
             >
               <img
                 src={img1}
