@@ -45,7 +45,7 @@ function Equipments() {
               initial={{x: -450}}
               animate={{x: 0}} 
               transition={{ duration: item.delay }}
-              className="flex flex-col gap-1 md:px-4 p-5 md:py-3 rounded-[1%] bg-[#f7f2f6] md:rounded-[10%]">
+              className="flex flex-col gap-1 md:px-4 p-5 md:py-3 bg-[#f7f2f6]" style={{boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'}}>
                 <div className="text-4xl p-2">{item.icon}</div>
                 <div className="text-3xl font-bold p-2">{item.title}</div>
                 <div className="text-lg p-2">{item.desc}</div>
