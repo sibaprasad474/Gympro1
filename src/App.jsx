@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Equipments from "./components/Equipments/Equipments";
-import Footer from "./components/footer/footer";
+import Footer1 from "./components/footer/Footer1";
 function App() {
   return (
     <div className="overflow-x-hidden">
@@ -18,7 +18,7 @@ function App() {
               <>
                 <Hero />
                 <Equipments />
-                <Footer />
+                <Footer1 />
               </>
             }
           />
