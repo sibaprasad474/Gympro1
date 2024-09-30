@@ -48,9 +48,12 @@ function Hero() {
             {/* Hero image with rotation animation */}
             <motion.div
               className="flex justify-center items-center py-16 px-16 md:py-[15vh] md:px-10"
-              initial={{ rotate: 90 ,y: 150}}
-              animate={{ rotate: 0 ,y: 0}} 
-              transition={{ duration: 1.5 }}
+              animate={{ rotate: [0, 360] }}
+              transition={{ 
+                duration: 4, 
+                ease: "linear",  // Ensure smooth and consistent speed
+                repeat: Infinity 
+              }}
             >
               <img
                 src={img1}
