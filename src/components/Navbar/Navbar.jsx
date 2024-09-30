@@ -4,11 +4,11 @@ import { CiSearch } from "react-icons/ci";
 import { MdMenu } from "react-icons/md";
 import { FaDumbbell } from "react-icons/fa";
 import { PiShoppingCartThin } from "react-icons/pi";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav";
 
 function Navbar() {
-  const [open,setOpen]=useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <>
       <nav>
@@ -50,17 +50,18 @@ function Navbar() {
               Login
             </button>
             {/* Mobile Hamburger menu */}
-            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200 block md:hidden" onClick={()=>setOpen(!open)}>
+            <button
+              className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200 block md:hidden"
+              onClick={() => setOpen(!open)}
+            >
               <MdMenu />
             </button>
           </div>
-          
         </div>
       </nav>
 
       {/* mobile menu sidebar section  */}
-      <MobileNav open={open}/>
-
+      <MobileNav open={open} />
     </>
   );
 }
