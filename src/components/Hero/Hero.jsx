@@ -12,14 +12,14 @@ function Hero() {
         <section className="w-[100vw] min-h-[650px]">
           {" "}
           {/* Ensure full width and height */}
-          <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
+          <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative mt-10">
             {/* Brand info with animation */}
-            <motion.div className="flex flex-col py-16 px-16 md:py-[15vh] md:px-10 font-playfair justify-center md:rounded-[10%]">
+            <div className="flex flex-col md:py-16 md:px-10 px-10 py-10 font-playfair justify-center md:rounded-[10%]">
               <motion.h1
                 initial={{ x: -150 }}
                 animate={{ x: 0 }}
                 transition={{ duration:3 }}
-                className="text-6xl lg:text-7xl font-[800] lg:leading-tight"
+                className="text-5xl lg:text-7xl font-[800] lg:leading-tight px-5"
               >
                 Gym Gives you the perfect{" "}
                 <span className="text-primary">Health</span>{" "}
@@ -28,13 +28,13 @@ function Hero() {
                 initial={{ x: -150 }}
                 animate={{ x: 0 }}
                 transition={{ duration: 4 }}
-                className="text-gray-600 xl:max-w-[400px] py-6 leading-relaxed text-xl"
+                className="text-gray-600 xl:max-w-[400px] py-6 leading-relaxed text-xl px-5"
               >
                 It is a long established fact that a reader will be by readable
                 content of a page when are the best product.
               </motion.p>
               {/* Button section */}
-              <div className="flex mt-10">
+              <div className="flex mt-10 px-5">
                 <button className="p-3 bg-primary text-white rounded-md text-xl hover:text-lg duration-200">
                   Order now
                 </button>
@@ -43,7 +43,7 @@ function Hero() {
                   Watch now
                 </button>
               </div>
-            </motion.div>
+            </div>
 
             {/* Hero image with rotation animation */}
             <motion.div
