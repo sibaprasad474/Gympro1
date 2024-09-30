@@ -46,7 +46,7 @@ function Navbar() {
             <button className="text-3xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <PiShoppingCartThin />
             </button>
-            <button className="p-3 hover:bg-primary hover:text-white duration-200 text-primary font-semibold rounded-md border-2 border-primary  md:block">
+            <button className="p-1 md:p-3 hover:bg-primary hover:text-white duration-200 text-primary font-semibold rounded-md border-2 border-primary  md:block">
               Login
             </button>
             {/* Mobile Hamburger menu */}
