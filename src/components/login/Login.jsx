@@ -11,7 +11,7 @@ const Login = () => {
     navigate("/login");
   };
   return (
-    <div className="flex items-center justify-center h-screen w-full px-5 sm:px-0">
+    <div className="flex items-center justify-center mt-10 w-full px-5 sm:px-0">
       <div className="flex bg-white rounded-lg shadow-lg border overflow-hidden max-w-sm lg:max-w-4xl w-full">
         <div
           className="hidden md:block lg:w-1/2 bg-cover"
