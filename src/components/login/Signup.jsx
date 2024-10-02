@@ -1,20 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import img1 from "../../assets/img1.png";
 import setting1 from "../../assets/setting1.png";
-
+import Footer1 from "../footer/Footer1";
 const Signup = () => {
   const navigate = useNavigate(); // Hook for programmatic navigation
 
+  // State variables to store form data
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const handleSignup = (e) => {
     e.preventDefault();
+    
+    // Log the form data to console
+    console.log({
+      firstName,
+      lastName,
+      email,
+      password,
+      confirmPassword,
+    });
+
     // Perform signup logic here (e.g., API call)
     // Once signup is successful, navigate to the login page
     navigate("/login");
   };
 
   return (
+    <>
     <div className="flex items-center justify-center mt-10 w-full px-5 sm:px-0">
       <div className="flex bg-white rounded-lg shadow-lg border overflow-hidden max-w-sm lg:max-w-4xl w-full">
         <motion.div
@@ -39,6 +56,8 @@ const Signup = () => {
               <input
                 className="text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700"
                 type="text"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)} // Store value in state
                 required
               />
             </div>
@@ -49,6 +68,8 @@ const Signup = () => {
               <input
                 className="text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700"
                 type="text"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)} // Store value in state
                 required
               />
             </div>
@@ -59,6 +80,8 @@ const Signup = () => {
               <input
                 className="text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700"
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} // Store value in state
                 required
               />
             </div>
@@ -69,6 +92,8 @@ const Signup = () => {
               <input
                 className="text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700"
                 type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)} // Store value in state
                 required
               />
             </div>
@@ -79,6 +104,8 @@ const Signup = () => {
               <input
                 className="text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700"
                 type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)} // Store value in state
                 required
               />
             </div>
@@ -105,7 +132,10 @@ const Signup = () => {
           </div>
         </div>
       </div>
+      
     </div>
+    <Footer1/>
+    </>
   );
 };
 
