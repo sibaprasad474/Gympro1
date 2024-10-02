@@ -5,9 +5,11 @@ import { MdMenu } from "react-icons/md";
 import { FaDumbbell } from "react-icons/fa";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import MobileNav from "./MobileNav";
 
 function Navbar() {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -46,7 +48,10 @@ function Navbar() {
             <button className="text-3xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <PiShoppingCartThin />
             </button>
-            <button className="p-1 md:p-3 hover:bg-primary hover:text-white duration-200 text-primary font-semibold rounded-md border-2 border-primary  md:block">
+            <button
+              className="p-1 md:p-3 hover:bg-primary hover:text-white duration-200 text-primary font-semibold rounded-md border-2 border-primary md:block"
+              onClick={() => navigate("/login")} // Navigate to /login on click
+            >
               Login
             </button>
             {/* Mobile Hamburger menu */}
