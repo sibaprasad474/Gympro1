@@ -8,7 +8,7 @@ import { Typography } from "@material-tailwind/react";
 
 function Footer1() {
   return (
-    <div className="py-16 px-16 md:py-[5vh] md:px-10 bg-primary text-white mt-[5vh]">
+    <div className="py-16 px-16 md:px-10 bg-primary text-white mt-[5vh]">
       <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
         <Typography color="blue-gray" className="font-normal">
           &copy; 2024 Gym Pro. All rights reserved.
